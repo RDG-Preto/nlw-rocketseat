@@ -1,0 +1,196 @@
+*{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+
+        body{
+            background-image: url(https://images3.alphacoders.com/101/1014074.jpg);
+            background-color: #121214;
+            background-position: top center;
+            background-repeat: repeat;
+            background-size: 100% auto;
+            background-size: cover;
+        }
+        body *{
+            font-family: 'Inter', sans-serif;
+            line-height: 160%;
+        }
+        
+        header{
+            padding-top: 32px;
+            
+            
+            
+        }
+        
+         header div:hover{  /* HOVER (quando passar o mouse em cima) */
+            transform: scale(1.1);
+        } 
+
+        header div {
+            max-width: 120px;
+            display: flex;
+            padding: 4px;
+            border-radius: 50%;
+            margin: auto;
+            background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+            transition: transform .3s;
+        }
+
+        header div img {
+            width: 100%;
+            border-radius: 50%;
+        }
+      
+
+     
+   
+        
+        main{
+            max-width: 580px;
+            height: 854px;
+            margin: 0 auto;
+        }
+
+        section{
+            color: #ffffff;
+            background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%),
+linear-gradient(0deg, #2A2634, #2A2634);
+            border-radius: 10px;
+            padding-top: 4px;
+            margin-top: 24px;
+            
+
+        }
+
+        section ul li {
+            transition: transform .3s;
+        }
+
+        section ul li:hover {
+            transform: scale(1.1);
+        }
+
+        main div{
+            background-color: #2A2634;
+            border-radius: 8px;
+            padding:  10px;
+
+            
+        }
+
+        h2{
+            letter-spacing: -0.47px;
+            font-size: 24px;
+        }
+
+        p{
+            font-size: 16px;
+            color: #A1A1AA;
+            letter-spacing: -0.18px;
+            margin-bottom: 24px;
+        }
+
+       ul{
+            display: flex;
+            flex-wrap: wrap;  /* organiza os itens de acordo o tamanho da tela */
+            gap: 15px;
+            list-style: none;
+           
+       }
+
+        main img {
+            width: 120px;
+        
+        }
+
+        .music-list img{
+            border-radius: 8px;
+            width: 90px;
+            gap: 15px;
+        }
+
+        .games-list img{
+            width: 90px;
+            border-radius: 8px;
+            gap: 5px;
+        }
+
+        .channel-list img{
+            gap: 5px;
+            border-radius: 50%;
+            width: 70px;
+            border: solid 1px #443e54;
+        }
+
+        .social-list{
+            gap: 5px;
+            
+        }
+
+        header div {
+            animation: fromTop .7s .4s backwards;
+        }
+
+        main section {
+            animation: fromLeft .7s .8s backwards;
+        }
+
+        /*animation*/
+
+        /* declaraçao 
+
+         @keyframes fromTop {
+            from {
+                
+            }
+
+            to {
+                
+            }
+        }
+        
+        */
+
+        @keyframes fromTop {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fromLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        main section:nth-child(1) {
+            animation-delay: .6s;
+        }
+
+        main section:nth-child(2) {
+            animation-delay: 1s;
+        }
+
+        main section:nth-child(3) {
+            animation-delay: 1.5s;
+        }
+
+        main section:nth-child(4) {
+            animation-delay: 2s;
+        }

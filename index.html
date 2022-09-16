@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RDG Card</title>
+        <link rel="stylesheet" href="styles.css">
+        
+     
+    </head>
+    <body>
+
+        <header>
+            <div >
+                <img src="https://avatars.githubusercontent.com/u/110961102?s=400&u=5c575ec64f898ce54a2d3406d33e12bd4c549911&v=4" alt="Self de Rodrigo">
+            </div>
+       </header>
+
+        <main>
+            <section>
+                <div>
+                    <h2>Meus artistas preferidos no Spotify</h2>
+                    <p>As músicas que eu mais curto ouvir!</p>                    
+                
+                    <ul class="music-list">
+                        <li>
+                            <a
+                            target="_blank"
+                            href="https://open.spotify.com/artist/64tNsm6TnZe2zpcMVMOoHL?si=1d140f3313e44834">
+                                <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/f/f1/Black_Gives_Way_to_Blue_cover.jpg/220px-Black_Gives_Way_to_Blue_cover.jpg" alt="Capa do Album Black gives way to blue de Alice i Chains">
+                            </a>
+                        </li>
+                        <li>
+                            <a 
+                            target="_blank"
+                            href="https://open.spotify.com/artist/59HSIfEC3pN63za9Izqm37?si=92c31172efe34247">   
+                                <img src="data:image/jpeg;base64,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" alt="Foto da Dj Ekanta Jake">
+                            </a>
+                        </li>
+                        <li>
+                            <a 
+                            target="_blank" 
+                            href="https://open.spotify.com/artist/0ruvhGLVp5XtTLHeDRBSBH?si=a214d1bd9ece4b41" 
+                            >
+                                <img src="https://m.media-amazon.com/images/I/91KIOfYoyZL._AC_SX522_.jpg" alt="capa ado album capricorn da banda Orchid">
+                            </a>
+                        </li>
+                        <li>
+                            <a 
+                            target="_blank"
+                            href="https://open.spotify.com/artist/0SFwBkGokPRtTX212zO7xo?si=07308bd7f071432d" 
+                            >
+                                <img src="https://i1.sndcdn.com/avatars-000154677369-9xg0p4-t500x500.jpg" alt="">
+                            </a>
+                        </li>
+                    </ul>    
+                </div>
+            </section>
+
+
+            <section>
+                    <div>
+                        <h2>Meus jogos</h2>
+                        <p>Os games que eu mais curto jogar!</p>                    
+                    
+                        <ul class="games-list">
+                            <li>
+                                <a
+                                target="_blank"
+                                href="https://www.twitch.tv/directory/game/Genshin%20Impact">
+                                    <img src="https://static-cdn.jtvnw.net/ttv-boxart/513181-150x150.jpg" alt="Imagem do jogo 'Genshin Impact'">
+                                </a>
+                            </li>
+                            <li>
+                                <a 
+                                target="_blank"
+                                href="https://www.twitch.tv/directory/game/The%20Last%20of%20Us%20Part%20I">   
+                                    <img src="https://static-cdn.jtvnw.net/ttv-boxart/294724507_IGDB-150x150.jpg" alt="Imagem do jogo 'The last of us'">
+                                </a>
+                            </li>
+                            <li>
+                                <a 
+                                target="_blank" 
+                                href="https://www.twitch.tv/directory/game/God%20of%20War" 
+                                >
+                                    <img src="https://static-cdn.jtvnw.net/ttv-boxart/6369_IGDB-150x150.jpg" alt="Imagem do jogo 'God of War'">
+                                </a>
+                            </li>
+                            <li>
+                                <a 
+                                target="_blank"
+                                href="https://www.twitch.tv/directory/game/Cuphead" 
+                                >
+                                    <img src="https://static-cdn.jtvnw.net/ttv-boxart/459064_IGDB-150x150.jpg" alt="Imagem do jogo 'Cuphead'">
+                                </a>
+                            </li>
+                        </ul>    
+                    </div>
+            </section>
+
+            <section>
+                <div>
+                    <h2>Canais e Streamers</h2>
+                    <p>Lista de canais e transmissões que eu não perco!</p>                    
+                
+                    <ul class="channel-list">
+                        <li>
+                            <a
+                            target="_blank"
+                            href="https://www.youtube.com/c/RocketSeat">
+                                <img src="https://yt3.ggpht.com/ytc/AMLnZu9-n9mDtKOwVMx3_-2zr8H57lHFag5t-0JcJNFPUQ=s176-c-k-c0x00ffffff-no-rj-mo" alt="Imagem do ">
+                            </a>
+                        </li>
+                        <li>
+                            <a 
+                            target="_blank"
+                            href="https://www.youtube.com/c/CursoemV%C3%ADdeo">   
+                                <img src="https://yt3.ggpht.com/ytc/AMLnZu9SFJaGUnZnhHBfmnrSQ_5IZObGBhia1VSMVdpTEg=s176-c-k-c0x00ffffff-no-rj-mo" alt="Imagem do ">
+                            </a>
+                        </li>
+                        <li>
+                            <a 
+                            target="_blank" 
+                            href="https://www.youtube.com/channel/UCpjHvl6UYFAeHCxVfUvMDQA" 
+                            >
+                                <img src="https://yt3.ggpht.com/ytc/AMLnZu_ZJOSKicjQFnKxARpHEgBDv1-VEXLTw5KmSFso=s176-c-k-c0x00ffffff-no-rj-mo" alt="Imagem do ">
+                            </a>
+                        </li>
+                        <li>
+                            <a 
+                            target="_blank"
+                            href="https://www.youtube.com/c/Programadorbr" 
+                            >
+                                <img src="https://yt3.ggpht.com/ytc/AMLnZu8zAmF1BDo7p8K9xw_3tr0J8fEdWbbq64ykTRSTpg=s176-c-k-c0x00ffffff-no-rj-mo" alt="Imagem do ">
+                            </a>
+                        </li>
+                    </ul>    
+                </div>
+            </section>
+
+            <section>
+            
+                <div>  
+                    <h2>Redes Socias</h2>
+                    <ul class="social-list">
+                        <li>
+                            <a
+                            target="_blank"
+                            href="tel:61985416291">
+                            <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 64 64" width="64px" height="64px" fill-rule="evenodd" clip-rule="evenodd"><linearGradient id="fzF5K76u~QPjMIgETt7bMa" x1="32" x2="32" y1="5.25" y2="58.834" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#1a6dff"/><stop offset="1" stop-color="#c822ff"/></linearGradient><path fill="url(#fzF5K76u~QPjMIgETt7bMa)" d="M6.399,57.699l3.792-13.847c-2.076-3.74-3.17-7.975-3.168-12.272 C7.028,17.641,18.373,6.301,32.312,6.301c6.762,0.003,13.115,2.636,17.889,7.414c4.774,4.778,7.402,11.151,7.4,17.944 C57.595,45.633,46.25,57,32.312,57c-4.024,0-8.073-1.019-11.744-2.95L6.399,57.699z M20.828,51.918l0.346,0.188 C24.645,53.999,28.492,55,32.302,55c12.846,0,23.293-10.471,23.299-23.341c0.002-6.26-2.418-12.13-6.814-16.53 S38.538,8.304,32.312,8.301c-12.836,0-23.283,10.443-23.288,23.279c-0.002,4.089,1.072,8.113,3.107,11.639l0.209,0.361L9.239,54.902 L20.828,51.918z M32.312,53c-3.686,0-7.415-1.06-10.793-3.063l-0.437-0.318l-8.854,2.323l2.382-8.691l-0.244-0.387 c-2.123-3.376-3.243-7.271-3.241-11.269c0.004-11.67,9.513-21.165,21.195-21.165c5.642,0.002,10.961,2.218,14.979,6.239 c4,4.003,6.202,9.345,6.2,15.039C53.495,43.448,43.99,53,32.312,53z M22.583,48.242C25.641,50.047,29.001,51,32.304,51 c10.584,0,19.191-8.654,19.195-19.292c0.002-5.161-1.992-10-5.614-13.625c-3.642-3.644-8.459-5.651-13.565-5.653 c-10.581,0-19.191,8.598-19.195,19.166c-0.002,3.619,1.012,7.146,2.933,10.201l0.715,1.131l-1.698,6.199l6.429-1.687L22.583,48.242z"/><linearGradient id="fzF5K76u~QPjMIgETt7bMb" x1="32.305" x2="32.305" y1="17.5" y2="46.527" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#6dc7ff"/><stop offset="1" stop-color="#e6abff"/></linearGradient><path fill="url(#fzF5K76u~QPjMIgETt7bMb)" fill-rule="evenodd" d="M26.12,21.219c-0.464-1.031-0.952-1.052-1.394-1.07 c-0.361-0.015-0.774-0.015-1.187-0.015c-0.413,0-1.084,0.155-1.651,0.775c-0.568,0.62-2.168,2.118-2.168,5.164 c0,3.047,2.219,5.991,2.529,6.405c0.31,0.413,4.284,6.865,10.579,9.347c5.231,2.063,6.296,1.653,7.431,1.549 c1.135-0.103,3.664-1.498,4.18-2.944c0.516-1.446,0.516-2.685,0.361-2.944c-0.155-0.258-0.568-0.413-1.187-0.723 c-0.619-0.31-3.664-1.808-4.232-2.014c-0.568-0.206-0.981-0.31-1.394,0.31c-0.413,0.619-1.599,2.014-1.96,2.427 c-0.361,0.414-0.723,0.465-1.342,0.156c-0.619-0.311-2.614-0.964-4.98-3.074c-1.841-1.641-3.084-3.668-3.445-4.288 c-0.361-0.619-0.039-0.955,0.272-1.264c0.278-0.277,0.619-0.723,0.929-1.085c0.309-0.362,0.412-0.62,0.619-1.033 c0.206-0.414,0.103-0.775-0.052-1.085S26.67,22.443,26.12,21.219z" clip-rule="evenodd"/></svg>
+                            
+                            </a>
+                        </li>
+                        <li>
+                            <a 
+                            target="_blank"
+                            href="https://web.facebook.com/RodrigoAlves1109">   
+                            <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 64 64" width="64px" height="64px"><linearGradient id="rhA40cqBlsJ1wx2ZjgJTqa" x1="32.526" x2="32.526" y1="16.627" y2="56.834" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#6dc7ff"/><stop offset="1" stop-color="#e6abff"/></linearGradient><path fill="url(#rhA40cqBlsJ1wx2ZjgJTqa)" d="M35.52,38.891h6.729l1.057-6.835H35.52v-3.736c0-2.839,0.928-5.358,3.584-5.358h4.268v-5.966c-0.75-0.101-2.335-0.323-5.332-0.323c-6.258,0-9.926,3.305-9.926,10.834v4.548h-6.433v6.835h6.433v17.788C29.385,56.869,30.676,57,32,57c1.197,0,2.366-0.109,3.52-0.266V38.891z"/><linearGradient id="rhA40cqBlsJ1wx2ZjgJTqb" x1="32" x2="32" y1="58" y2="6" gradientTransform="matrix(1 0 0 -1 0 64)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#1a6dff"/><stop offset="1" stop-color="#c822ff"/></linearGradient><path fill="none" stroke="url(#rhA40cqBlsJ1wx2ZjgJTqb)" stroke-miterlimit="10" stroke-width="2" d="M32 7A25 25 0 1 0 32 57A25 25 0 1 0 32 7Z"/></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a 
+                            target="_blank" 
+                            href="https://www.linkedin.com/in/rodrigo-alves-014655246/" 
+                            >
+                            <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 64 64" width="64px" height="64px"><linearGradient id="mM51xuUryDpy5zRPCJ4TLa" x1="32" x2="32" y1="6" y2="58" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#1a6dff"/><stop offset="1" stop-color="#c822ff"/></linearGradient><path fill="url(#mM51xuUryDpy5zRPCJ4TLa)" d="M32,58C17.664,58,6,46.337,6,32C6,17.664,17.664,6,32,6s26,11.664,26,26 C58,46.337,46.336,58,32,58z M32,8C18.767,8,8,18.767,8,32s10.767,24,24,24s24-10.767,24-24S45.233,8,32,8z"/><linearGradient id="mM51xuUryDpy5zRPCJ4TLb" x1="21.922" x2="22.081" y1="25.872" y2="44.462" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#6dc7ff"/><stop offset="1" stop-color="#e6abff"/></linearGradient><rect width="6" height="18" x="19" y="26" fill="url(#mM51xuUryDpy5zRPCJ4TLb)"/><linearGradient id="mM51xuUryDpy5zRPCJ4TLc" x1="22.474" x2="22.527" y1="17.966" y2="24.145" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#6dc7ff"/><stop offset="1" stop-color="#e6abff"/></linearGradient><ellipse cx="22.5" cy="21" fill="url(#mM51xuUryDpy5zRPCJ4TLc)" rx="3.5" ry="3"/><g><linearGradient id="mM51xuUryDpy5zRPCJ4TLd" x1="38.077" x2="37.922" y1="25.983" y2="44.076" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#6dc7ff"/><stop offset="1" stop-color="#e6abff"/></linearGradient><path fill="url(#mM51xuUryDpy5zRPCJ4TLd)" d="M40,26h-0.529H39.47c-2.187,0-4,1.572-4.387,3.647H35V26h-6v18h6v-8.588v-1.529 c0.007-0.379,0.037-0.729,0.084-1.06C35.392,31.493,36.577,30.5,38,30.5c1.657,0,3,1.343,3,3v0.559v1.176V44h6v-9.118v-0.823V33 C47,29.134,43.866,26,40,26z"/></g></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a 
+                            target="_blank"
+                            href="https://www.instagram.com/rdg_preto/" 
+                            >
+                            <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 64 64" width="64px" height="64px"><linearGradient id="jm_nAfYbxsVmTlYr5N4x9a" x1="32" x2="32" y1="6.667" y2="57.872" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#1a6dff"/><stop offset="1" stop-color="#c822ff"/></linearGradient><path fill="url(#jm_nAfYbxsVmTlYr5N4x9a)" d="M44,57H20c-7.168,0-13-5.832-13-13V20c0-7.168,5.832-13,13-13h24c7.168,0,13,5.832,13,13v24 C57,51.168,51.168,57,44,57z M20,9C13.935,9,9,13.935,9,20v24c0,6.065,4.935,11,11,11h24c6.065,0,11-4.935,11-11V20 c0-6.065-4.935-11-11-11H20z"/><linearGradient id="jm_nAfYbxsVmTlYr5N4x9b" x1="32" x2="32" y1="18.167" y2="45.679" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#6dc7ff"/><stop offset="1" stop-color="#e6abff"/></linearGradient><path fill="url(#jm_nAfYbxsVmTlYr5N4x9b)" d="M32,45c-7.168,0-13-5.832-13-13c0-7.168,5.832-13,13-13c7.168,0,13,5.832,13,13 C45,39.168,39.168,45,32,45z M32,23c-4.962,0-9,4.038-9,9c0,4.963,4.038,9,9,9c4.963,0,9-4.037,9-9C41,27.038,36.963,23,32,23z"/><linearGradient id="jm_nAfYbxsVmTlYr5N4x9c" x1="46" x2="46" y1="12.75" y2="23.049" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#6dc7ff"/><stop offset="1" stop-color="#e6abff"/></linearGradient><path fill="url(#jm_nAfYbxsVmTlYr5N4x9c)" d="M46 15A3 3 0 1 0 46 21A3 3 0 1 0 46 15Z"/></svg>   
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://open.spotify.com/user/jn9fd090eabphpom9pp7oexlg">
+                                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 64 64" width="64px" height="64px"><linearGradient id="7D9AdVpr60peaWwe5HX4Pa" x1="31.088" x2="31.088" y1="18.125" y2="42.761" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#6dc7ff"/><stop offset="1" stop-color="#e6abff"/></linearGradient><path fill="url(#7D9AdVpr60peaWwe5HX4Pa)" d="M45.391,32.56c-7.735-4.753-19.05-6.091-28.152-3.329c-1.031,0.314-1.614,1.403-1.303,2.437 c0.314,1.031,1.406,1.614,2.439,1.301c7.968-2.419,18.237-1.219,24.972,2.92c0.918,0.565,2.121,0.277,2.687-0.643 C46.599,34.329,46.31,33.125,45.391,32.56"/><linearGradient id="7D9AdVpr60peaWwe5HX4Pb" x1="31.999" x2="31.999" y1="18.125" y2="42.761" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#6dc7ff"/><stop offset="1" stop-color="#e6abff"/></linearGradient><path fill="url(#7D9AdVpr60peaWwe5HX4Pb)" d="M48.691,24.109c-9.3-5.52-24.016-6.04-32.868-3.353c-1.239,0.377-1.937,1.685-1.563,2.924 c0.375,1.238,1.685,1.937,2.923,1.561c7.712-2.34,21.036-1.899,29.114,2.898c1.111,0.661,2.551,0.294,3.212-0.82 C50.17,26.209,49.806,24.77,48.691,24.109"/><linearGradient id="7D9AdVpr60peaWwe5HX4Pc" x1="30.046" x2="30.046" y1="18.125" y2="42.761" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#6dc7ff"/><stop offset="1" stop-color="#e6abff"/></linearGradient><path fill="url(#7D9AdVpr60peaWwe5HX4Pc)" d="M42.45,39.922c-6.606-4.036-14.794-4.976-24.341-2.793c-0.842,0.191-1.367,1.029-1.174,1.87 c0.191,0.84,1.029,1.367,1.87,1.174c8.724-1.992,16.13-1.18,22.015,2.416c0.736,0.45,1.698,0.219,2.148-0.519 C43.418,41.334,43.186,40.371,42.45,39.922"/><linearGradient id="7D9AdVpr60peaWwe5HX4Pd" x1="31.999" x2="31.999" y1="3.625" y2="57.896" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#1a6dff"/><stop offset="1" stop-color="#c822ff"/></linearGradient><path fill="url(#7D9AdVpr60peaWwe5HX4Pd)" d="M31.999,57c-14.337,0-26-11.663-26-26s11.663-26,26-26s26,11.663,26,26S46.336,57,31.999,57z M31.999,7c-13.233,0-24,10.767-24,24s10.767,24,24,24s24-10.767,24-24S45.232,7,31.999,7z"/></svg>
+                            </a>
+                        </li>
+                    </ul>    
+                </div>  
+            </section>
+        </main>
+    </body>
+</html>
